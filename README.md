@@ -99,4 +99,3 @@ The configuration is managed via YAML files (e.g., `config/basic_config.yaml`). 
 
 If you want to fine-tune your own model to perform decomposition and dependency analysis, you can use the scripts in `src/data/` to generate training data using a strong teacher model (e.g., GPT-4).
 
-The seed data for fine-tuning is derived from the **PER-PSE** dataset: [https://huggingface.co/datasets/GenIRAG/PER-PSE](https://huggingface.co/datasets/GenIRAG/PER-PSE)
