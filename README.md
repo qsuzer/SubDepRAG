@@ -20,18 +20,20 @@ This repository contains the reproduction code for the SubDepRAG project and var
 pip install -r requirements.txt
 ```
 
-**Note**: You need to have `FlashRAG` installed.
-- [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG)
+**Note**: You need to have `FlashRAG` tookit installed.
+```bash
+pip install flashrag[full]
+```
 
 ## Project Structure
 
 ```
-GSub-RAG-Reproduce/
+SubDepRAGRAG-Reproduce/
 ├── src/
 │   ├── pipeline/
 │   │   ├── __init__.py
 │   │   ├── base_pipeline.py      # Base classes and shared logic
-│   │   ├── subgraph_pipeline.py  # GSub-RAG (Graph-Based) implementation
+│   │   ├── subgraph_pipeline.py  # SubDepRAG (Graph-Based) implementation
 │   │   ├── ircot_pipeline.py     # IRCoT implementation
 │   │   ├── genground_pipeline.py # GenGround implementation
 │   │   ├── perqa_pipeline.py     # PERQA implementation
@@ -51,7 +53,7 @@ GSub-RAG-Reproduce/
 
 This repository supports the following pipelines:
 
-*   **`subgraph`**: The main GSub-RAG pipeline with graph-based reasoning.
+*   **`subgraph`**: The main SubDepRAG pipeline with graph-based reasoning.
 *   **`ircot`**: Interleaving Retrieval with Chain-of-Thought (Iterative retrieval).
 *   **`genground`**: Generate-and-Ground (Iterative generation with verification).
 *   **`perqa`**: Planner-Executor-Reasoner architecture.
@@ -71,7 +73,7 @@ python run_pipeline.py --pipeline <pipeline_name> --dataset <dataset_name>
 
 ### Examples
 
-**Run the GSub-RAG (Subgraph) pipeline:**
+**Run the SubDepRAG (Subgraph) pipeline:**
 ```bash
 python run_pipeline.py --pipeline subgraph --config config/basic_config.yaml
 ```
