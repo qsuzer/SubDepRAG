@@ -1,6 +1,6 @@
-# GSub-RAG: Graph-Based Sub-question Reasoning for RAG
+# SubDepRAG: Sub-question Dependency-Aware Retrieval-Augmented Generation for Multi-hop Question Answering
 
-This repository contains the reproduction code for the GSub-RAG project and various baseline RAG pipelines. It implements a graph-based reasoning pipeline for Retrieval-Augmented Generation (RAG), allowing for dynamic decomposition, dependency analysis, and pruning of sub-questions.
+This repository contains the reproduction code for the SubDepRAG project and various baseline RAG pipelines. It implements a graph-based reasoning pipeline for Retrieval-Augmented Generation (RAG), allowing for dynamic decomposition, dependency analysis, and pruning of sub-questions.
 
 ![Model Framework](framework.pdf)
 
